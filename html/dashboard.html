@@ -33,18 +33,213 @@
        BODY SECTION
        ------------------------------------------- -->
   <body>
-    <div class="container-fluid min-vh-100">
+    <div class="container-fluid">
       <div class="row">
         <!--  HEADER IS HERE -->
         <div
-          class="db_header col-md-12 d-flex justify-content-center align-items-center"
+          class="db_header py-2 px-5 col-md-12 d-flex justify-space-between align-items-center"
         >
-          <div class="col-md-4"><img src="" alt="hiddenGem logo" /></div>
-          <div class="col-md-4"><p>Explore</p></div>
           <div class="col-md-4">
-            <img src="" alt="notification icon" />
-            <img src="" alt="avatar icon" />
-            <p class="username">GiftOfGod</p>
+            <img src="/assets/hidden_gem_logo.svg" alt="hiddenGem logo" />
+          </div>
+          <div
+            class="col-md-4 text-center d-flex align-items-center justify-content-center"
+          >
+            <p class="my-auto caption">Explore</p>
+          </div>
+          <div
+            class="col-md-4 d-flex justify-content-end align-items-center align-end"
+          >
+            <!--Notification -->
+            <div
+              class="notif_wrapper d-flex justify-content-center align-items-center me-2"
+            >
+              <img
+                src="/assets/dashboard/notif_icon.svg"
+                alt="notification icon"
+              />
+            </div>
+            <!--Avatar Icon -->
+            <div class="d-flex align-items-center">
+              <img
+                src="/assets/dashboard/Avatar.svg"
+                alt="avatar icon"
+                width="32px"
+                height="32px"
+                class="me-1"
+              />
+            </div>
+            <p class="username my-auto">GiftOfGod</p>
+          </div>
+        </div>
+
+        <!-- NAVBAR -->
+        <div class="row my-2 d-flex justify-content-center">
+          <div
+            class="col-md-6 db_navbar d-flex justify-content-between align-items-center rounded-2"
+          >
+            <!-- NavBar Items -->
+            <div class="navbar_item_active d-flex align-items-center">
+              <img
+                src="/assets/dashboard/explore_icon_active.svg"
+                alt="explore-icon"
+                class="me-2"
+              />
+              <p class="nav_text_active my-auto">Explore</p>
+            </div>
+            <div class="navbar_item d-flex align-items-center">
+              <img
+                src="/assets/dashboard/guides_inactive.svg"
+                alt="guides-icon"
+                class="me-2"
+              />
+              <p class="nav_text_active my-auto">Guides</p>
+            </div>
+            <div class="navbar_item d-flex align-items-center">
+              <img
+                src="/assets/dashboard/bookings_inactive.svg"
+                alt="bookings-icon"
+                class="me-2"
+              />
+              <p class="nav_text_active my-auto">Bookings</p>
+            </div>
+            <div class="navbar_item d-flex align-items-center">
+              <img
+                src="/assets/dashboard/profile_inactive.svg"
+                alt="myprofile-icon"
+                class="me-2"
+              />
+              <p class="nav_text_active my-auto">My Profile</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DESTINATIONS -->
+        <!-- heading -->
+        <div class="row d-flex justify-content-center mt-3">
+          <div class="col-md-12 d-flex align-items-center px-5">
+            <div class="col-md-8">
+              <h1>Explore Nigeria</h1>
+              <p>Discover mountains, trails, waterfalls, and wildlife</p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-end">
+              <button class="btn btn-primary">
+                <span
+                  ><img
+                    class="me-2"
+                    src="/assets/dashboard/filter_icon.svg"
+                    alt="filter-icon" /></span
+                >Filter
+              </button>
+            </div>
+          </div>
+          <!-- filter pills -->
+          <div class="filter_pill_wrapper mb-4 px-5">
+            <span class="filter_pill">All</span>
+            <span class="filter_pill">Hiking</span>
+            <span class="filter_pill">Waterfalls</span>
+            <span class="filter_pill">Mountains</span>
+            <span class="filter_pill">Wildlife</span>
+            <span class="filter_pill">Lakes</span>
+            <span class="filter_pill">Forest</span>
+            <span class="filter_pill">Ancient</span>
+          </div>
+        </div>
+
+        <!-- destination cards -->
+        <div class="row px-5">
+          <div class="col-md-4">
+            <div class="card_wrapper">
+              <!-- Each Card-->
+              <img
+                src="/assets/dashboard/places/chappal waddi.jpg"
+                alt="chappal waddi"
+                width="100%"
+              />
+              <!-- Location and Ratings -->
+              <div class="text_and_ratings d-flex justify-content-between">
+                <div class="text_only">
+                  <h5 class="location">Chappal Waddi</h5>
+                  <p class="state">Taraba State</p>
+                </div>
+                <div class="rating_only d-flex justify-content-between">
+                  <img
+                    src="/assets/dashboard/rating_icon.svg"
+                    alt="rating_icon"
+                    width="24px"
+                    height="24px"
+                  />
+                  <p>4.9 (42)</p>
+                </div>
+              </div>
+              <!-- category -->
+              <div class="col-md-12 category">
+                <span class="activity">Hiking</span>
+                <span class="difficulty_hard">Hard</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card_wrapper">
+              <!-- Each Card-->
+              <img
+                src="/assets/dashboard/places/chappal waddi.jpg"
+                alt="chappal waddi"
+                width="100%"
+              />
+              <!-- Location and Ratings -->
+              <div class="text_and_ratings d-flex justify-content-between">
+                <div class="text_only">
+                  <h5 class="location">Chappal Waddi</h5>
+                  <p class="state">Taraba State</p>
+                </div>
+                <div class="rating_only d-flex justify-content-between">
+                  <img
+                    src="/assets/dashboard/rating_icon.svg"
+                    alt="rating_icon"
+                    width="24px"
+                    height="24px"
+                  />
+                  <p>4.9 (42)</p>
+                </div>
+              </div>
+              <!-- category -->
+              <div class="col-md-12 category">
+                <span class="activity">Hiking</span>
+                <span class="difficulty_hard">Hard</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card_wrapper">
+              <!-- Each Card-->
+              <img
+                src="/assets/dashboard/places/chappal waddi.jpg"
+                alt="chappal waddi"
+                width="100%"
+              />
+              <!-- Location and Ratings -->
+              <div class="text_and_ratings d-flex justify-content-between">
+                <div class="text_only">
+                  <h5 class="location">Chappal Waddi</h5>
+                  <p class="state">Taraba State</p>
+                </div>
+                <div class="rating_only d-flex justify-content-between">
+                  <img
+                    src="/assets/dashboard/rating_icon.svg"
+                    alt="rating_icon"
+                    width="24px"
+                    height="24px"
+                  />
+                  <p>4.9 (42)</p>
+                </div>
+              </div>
+              <!-- category -->
+              <div class="col-md-12 category">
+                <span class="activity">Hiking</span>
+                <span class="difficulty_hard">Hard</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

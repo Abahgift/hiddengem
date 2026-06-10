@@ -85,10 +85,6 @@ h1 {
   background-color: var(--header-bg);
 }
 
-.caption {
-  font-size: 0.813rem;
-}
-
 .username {
   font-size: 0.875rem;
 }
@@ -101,42 +97,11 @@ h1 {
   height: 2rem;
 }
 
-.db_navbar {
+/* BOOKING DETAILS START HERE */
+.arrow_wrapper {
+  padding: 0.5rem;
+  border-radius: var(--border-radius-pill);
   background-color: var(--white-grey);
-}
-
-.navbar_item_active {
-  background-color: var(--green-light-2);
-  padding: 0.875rem 1.5rem;
-  font-weight: 500;
-  border-color: var(--green-primary);
-  border-bottom: 2px solid var(--green-primary-dark);
-}
-
-.navbar_item {
-  padding: 0.875rem 1.5rem;
-}
-
-.text_and_ratings {
-  background-color: var(--green-light-1);
-  margin: 2px 0px;
-  padding: 12px 16px;
-  border-radius: var(--border-radius-sm);
-}
-
-.location {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.state {
-  font-size: 0.85rem;
-}
-
-.category {
-  background-color: var(--white-grey);
-  padding: 12px 16px;
-  border-radius: var(--border-radius-sm);
 }
 
 .activity {
@@ -153,9 +118,78 @@ h1 {
   font-size: 0.85rem;
 }
 
-.filter_pill {
-  border-radius: var(--border-radius-pill);
+.location_image {
+  height: 350px;
+  background-image: url("/assets/images/chappal_waddi_hidden_gem.webp");
+  border-radius: var(--border-radius-md);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.subtext {
+  color: var(--text-grey);
+  font-size: 0.925rem;
+}
+
+.calendar_wrapper {
   background-color: var(--white-grey);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
+}
+
+.calendar,
+.trip_container {
+  background-color: var(--white);
+}
+
+.minus,
+.plus {
+  background-color: var(--green-accent-1);
+  border-radius: var(--border-radius-pill);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start_date {
+  border-right: 1px solid;
+  border-color: lightgrey;
+}
+
+.days {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.side {
+  background-color: var(--white-grey);
+}
+
+.each_hiw_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtext-difficulty {
+  color: var(--error);
+  font-weight: 600;
+}
+
+.caption {
+  font-size: 0.813rem;
+}
+
+.fees_breakdown {
+  background-color: var(--white);
+}
+
+.each_fee {
+  display: flex;
+  justify-content: space-between;
 }

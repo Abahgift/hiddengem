@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 a {
@@ -101,61 +101,22 @@ h1 {
   height: 2rem;
 }
 
-.db_navbar {
-  background-color: var(--white-grey);
-}
-
-.navbar_item_active {
-  background-color: var(--green-light-2);
-  padding: 0.875rem 1.5rem;
-  font-weight: 500;
-  border-color: var(--green-primary);
-  border-bottom: 2px solid var(--green-primary-dark);
-}
-
-.navbar_item {
-  padding: 0.875rem 1.5rem;
-}
-
-.text_and_ratings {
-  background-color: var(--green-light-1);
-  margin: 2px 0px;
-  padding: 12px 16px;
-  border-radius: var(--border-radius-sm);
-}
-
-.location {
-  font-size: 1rem;
+/* BOOKING CONFIRMATION DETAILS START HERE */
+h1 {
+  font-size: 2rem;
   font-weight: 500;
 }
 
-.state {
-  font-size: 0.85rem;
+.subtext {
+  color: var(--text-grey);
+  font-size: 0.825rem;
 }
 
-.category {
+.side {
   background-color: var(--white-grey);
-  padding: 12px 16px;
-  border-radius: var(--border-radius-sm);
 }
 
-.activity {
-  border-radius: var(--border-radius-pill);
-  background-color: var(--white);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
-}
-
-.difficulty_hard {
-  border-radius: var(--border-radius-pill);
-  background-color: var(--difficulty-hard);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
-}
-
-.filter_pill {
-  border-radius: var(--border-radius-pill);
-  background-color: var(--white-grey);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
+.each_ts_wrapper {
+  display: flex;
+  justify-content: space-between;
 }
