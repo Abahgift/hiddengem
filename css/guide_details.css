@@ -120,30 +120,54 @@ h1 {
   height: 2rem;
 }
 
-/* FILTER START HERE */
-.arrow_wrapper {
-  padding: 0.5rem;
-  border-radius: var(--border-radius-pill);
+.db_navbar {
   background-color: var(--white-grey);
 }
 
-.filter_wrapper {
-  background-color: var(--white-grey);
-  padding: 1rem;
-  border-radius: var(--border-radius-md);
-  border: 0.5px solid var(--stroke);
+.navbar_item_active {
+  background-color: var(--green-light-2);
+  padding: 0.875rem 1.5rem;
+  font-weight: 500;
+  border-color: var(--green-primary);
+  border-bottom: 2px solid var(--green-primary-dark);
 }
 
-.pill {
+.navbar_item {
+  padding: 0.875rem 1.5rem;
+}
+
+/* =========================== */
+.filter_pill {
   border-radius: var(--border-radius-pill);
-  background-color: var(--white);
+  background-color: var(--white-grey);
   padding: 0.5rem 0.75rem;
   font-size: 0.85rem;
 }
 
-.pill_active {
+.filter_pill_active {
   border-radius: var(--border-radius-pill);
   background-color: var(--green-light-2);
   padding: 0.5rem 0.75rem;
   font-size: 0.85rem;
+}
+
+.each_card {
+  background-color: var(--white-grey);
+  border-radius: var(--border-radius-md);
+  padding: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.name {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0;
+  padding-bottom: 0.1rem;
+}
+
+.subtext {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 1rem;
 }
