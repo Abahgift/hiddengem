@@ -117,99 +117,30 @@ h1 {
   height: 2rem;
 }
 
-/* BOOKING DETAILS START HERE */
+/* FILTER START HERE */
 .arrow_wrapper {
   padding: 0.5rem;
   border-radius: var(--border-radius-pill);
   background-color: var(--white-grey);
 }
 
-.activity {
-  border-radius: var(--border-radius-pill);
-  background-color: var(--white);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
-}
-
-.difficulty_hard {
-  border-radius: var(--border-radius-pill);
-  background-color: var(--difficulty-hard);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
-}
-
-.location_image {
-  height: 350px;
-  background-image: url("/assets/images/chappal_waddi_hidden_gem.webp");
+.filter_wrapper {
+  background-color: var(--white-grey);
+  padding: 1rem;
   border-radius: var(--border-radius-md);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  border: 0.5px solid var(--stroke);
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.subtext {
-  color: var(--text-grey);
-  font-size: 0.925rem;
-}
-
-.calendar_wrapper {
-  background-color: var(--white-grey);
-}
-
-.calendar,
-.trip_container {
-  background-color: var(--white);
-}
-
-.minus,
-.plus {
-  background-color: var(--green-accent-1);
+.pill {
   border-radius: var(--border-radius-pill);
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.start_date {
-  border-right: 1px solid;
-  border-color: lightgrey;
-}
-
-.days {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.side {
-  background-color: var(--white-grey);
-}
-
-.each_hiw_wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.subtext-difficulty {
-  color: var(--error);
-  font-weight: 600;
-}
-
-.caption {
-  font-size: 0.813rem;
-}
-
-.fees_breakdown {
   background-color: var(--white);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
 }
 
-.each_fee {
-  display: flex;
-  justify-content: space-between;
+.pill_active {
+  border-radius: var(--border-radius-pill);
+  background-color: var(--green-light-2);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
 }

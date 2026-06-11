@@ -76,41 +76,72 @@
           </div>
         </div>
 
-        <!-- heading -->
-        <div class="row mt-5">
-          <div class="col-md-4 px-5">
-            <h3>Booking request sent!</h3>
-            <p class="subtext">
-              Aliyu Jibrin has received your booking request and will confirm
-              within 24 hours. You'll be notified by email once confirmed.
-            </p>
+        <!-- Entire Body Wrapper -->
+        <div class="db_body_wrapper col-md-12 d-flex justify-content-center">
+          <!-- heading -->
+          <div class="row mt-5">
+            <div class="col-8 px-5 ms-auto me-auto">
+              <div class="confirmation_wrapper d-flex justify-content-center">
+                <img
+                  src="/assets/dashboard/booking_confirmation.svg"
+                  alt="confirmation icon"
+                  class="confirmation_icon mb-3"
+                />
+              </div>
+              <h3 class="text-center">Booking request sent!</h3>
+              <p class="subtext text-center">
+                Aliyu Jibrin has received your booking request and will confirm
+                within 24 hours. You'll be notified by email once confirmed.
+              </p>
 
-            <!-- Trip Summary -->
-            <div class="trip_summary_wrapper side p-4 mt-3 rounded-3">
-              <h6 class="mb-3">Trip Summary</h6>
-              <div class="each_ts_wrapper">
-                <p class="subtext">Best season</p>
-                <p class="subtext">Nov – Feb</p>
+              <!-- Trip Summary -->
+              <div class="trip_summary_wrapper side p-3 mt-3 rounded-3">
+                <h6 class="mb-3">Trip Summary</h6>
+                <div class="each_ts_wrapper">
+                  <p class="subtext">Destination</p>
+                  <p class="subtext destination">Chappal Waddi</p>
+                </div>
+                <div class="each_ts_wrapper">
+                  <p class="subtext">Guide</p>
+                  <p class="subtext guide">Aliyu Ibrahim</p>
+                </div>
+                <div class="each_ts_wrapper">
+                  <p class="subtext">Start date</p>
+                  <p class="subtext start_date_grab">10 May 2025</p>
+                </div>
+                <div class="each_ts_wrapper">
+                  <p class="subtext">End date</p>
+                  <p class="subtext end_date_grab">13 May 2025</p>
+                </div>
+                <div class="each_ts_wrapper">
+                  <p class="subtext">Duration</p>
+                  <p class="subtext duration">3 days</p>
+                </div>
+                <div class="each_ts_wrapper">
+                  <p class="subtext">Total Amount Paid</p>
+                  <p class="subtext total">
+                    ₦<span class="amount_paid">77,500</span>
+                  </p>
+                </div>
+                <div class="each_ts_wrapper">
+                  <p class="subtext">Status</p>
+                  <p class="subtext trip_status">Pending</p>
+                </div>
               </div>
-              <div class="each_ts_wrapper">
-                <p class="subtext">Activity</p>
-                <p class="subtext">Mountain hiking</p>
-              </div>
-              <div class="each_ts_wrapper">
-                <p class="subtext">Difficulty</p>
-                <p class="subtext-difficulty">Hard</p>
-              </div>
-              <div class="each_ts_wrapper">
-                <p class="subtext">Guide required</p>
-                <p class="subtext">Strongly advised</p>
+
+              <!-- Buttons -->
+              <div class="row mb-3">
+                <div class="button_wrapper col-md-12 mb-3">
+                  <button class="btn btn-secondary col-12 my-2">
+                    View My Bookings
+                  </button>
+                  <button class="btn btn-primary col-12">
+                    See More Locations
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- TRIP SUMMARY -->
-        <div class="row">
-          <div class="col-md-5"></div>
         </div>
       </div>
     </div>
