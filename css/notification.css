@@ -96,6 +96,24 @@ a {
   transform: scale(1.01);
 }
 
+.btn-tertiary {
+  background-color: var(--white) !important;
+  color: var(--green-dark-3);
+  border: none;
+  border-radius: var(--border-radius-md);
+  transition: transform 0.3s ease;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.btn-tertiary:hover {
+  background-color: var(--green-light-2) !important;
+  color: var(--green-dark-3);
+  border: none;
+  transform: scale(1.01);
+}
 /* ---------------------------------------------------------- */
 /* STYLING STARTS HERE */
 /* ---------------------------------------------------------- */
@@ -120,109 +138,22 @@ h1 {
   height: 2rem;
 }
 
-.db_navbar {
-  background-color: var(--white-grey);
-}
+/* -------------------- */
+/* NOTIFICATIONS START HERE */
 
-.navbar_item_active {
-  background-color: var(--green-light-2);
-  padding: 0.875rem 1.5rem;
-  font-weight: 500;
-  border-color: var(--green-primary);
-  border-bottom: 2px solid var(--green-primary-dark);
-}
-
-.navbar_item {
-  padding: 0.875rem 1.5rem;
-}
-
-/* LOCATION DETAILS START HERE */
-.arrow_wrapper {
-  padding: 0.5rem;
-  border-radius: var(--border-radius-pill);
-  background-color: var(--white-grey);
-}
-
-.activity {
-  border-radius: var(--border-radius-pill);
-  background-color: var(--white);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
-}
-
-.difficulty_hard {
-  border-radius: var(--border-radius-pill);
-  background-color: var(--difficulty-hard);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
-}
-
-h1 {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-h3 {
-  margin: 0 !important;
-  padding: 0 !important;
-  padding-bottom: 0.1rem !important;
-}
-
-.the_metric {
-  font-weight: 400;
+.each_card {
+  /* background-color: #f7f7f7; */
+  border-bottom: 1px solid var(--stroke);
 }
 
 .subtext {
   color: var(--text-grey);
-  font-size: 0.925rem;
+  font-size: 0.825rem;
   margin: 0;
   padding-bottom: 1rem;
 }
 
-.subtext_review {
-  font-size: 0.925rem;
-  margin: 0;
-  padding-bottom: 1rem;
-}
-
-.wrapper_2 {
-  background-color: var(--white);
-  padding: 1.2rem 1rem;
-}
-.filter_pill {
-  border-radius: var(--border-radius-pill);
-  background-color: var(--white-grey);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
-}
-
-.filter_pill_active {
-  border-radius: var(--border-radius-pill);
-  background-color: var(--green-light-2);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
-}
-
-.each_destination {
-  background-color: #f7f8f7;
-  /* background-color: var(--white-grey); */
-  padding: 0.8rem 1rem;
-  border-radius: var(--border-radius-md);
-}
-
-.each_review {
-  /* background-color: var(--white-grey); */
-  background-color: #f7f8f7;
-  padding: 1rem 1.4rem;
-  border-radius: var(--border-radius-md);
-}
-
-.side {
-  /* background-color: var(--white-grey); */
-  background-color: #f7f8f7;
-}
-
-.about_guide {
-  /* background-color: var(--white-grey); */
-  background-color: #f7f8f7;
+.icon {
+  width: 40px;
+  height: 40px;
 }
