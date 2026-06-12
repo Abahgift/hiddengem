@@ -178,13 +178,16 @@ h1 {
   font-size: 0.85rem;
 }
 
-.each_card {
-  background-color: #f7f7f7;
-}
-
 .subtext {
   color: var(--text-grey);
   font-size: 0.925rem;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.subtext_2 {
+  color: var(--text-grey);
+  font-size: 0.825rem;
   margin: 0;
   padding-bottom: 1rem;
 }
@@ -204,15 +207,6 @@ h1 {
   font-size: 1rem !important;
 }
 
-.form-control {
-  padding: 0.75rem !important;
-  font-size: 0.825rem !important;
-}
-
-.form-check-input {
-  color: var(--green-primary-dark) !important;
-}
-
 .names-wrapper {
   display: flex;
   gap: 0.5rem;
@@ -220,4 +214,8 @@ h1 {
 
 .form-label {
   font-size: 0.825rem;
+}
+
+.each_card {
+  background-color: var(--white);
 }

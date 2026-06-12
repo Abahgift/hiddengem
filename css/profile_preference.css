@@ -178,10 +178,6 @@ h1 {
   font-size: 0.85rem;
 }
 
-.each_card {
-  background-color: #f7f7f7;
-}
-
 .subtext {
   color: var(--text-grey);
   font-size: 0.925rem;
@@ -204,15 +200,6 @@ h1 {
   font-size: 1rem !important;
 }
 
-.form-control {
-  padding: 0.75rem !important;
-  font-size: 0.825rem !important;
-}
-
-.form-check-input {
-  color: var(--green-primary-dark) !important;
-}
-
 .names-wrapper {
   display: flex;
   gap: 0.5rem;
@@ -220,4 +207,61 @@ h1 {
 
 .form-label {
   font-size: 0.825rem;
+}
+
+.each_card {
+  background-color: var(--white);
+}
+
+/* -------------------------- */
+/* Toggle CSS */
+/* Container for the entire switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide the default HTML checkbox visually */
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The track background */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e5e5e5;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+/* The sliding circular knob inside */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* Change track color when checked */
+input:checked + .slider {
+  background-color: #4caf50; /* Green */
+}
+
+/* Slide the circular knob to the right when checked */
+input:checked + .slider::before {
+  transform: translateX(26px);
 }

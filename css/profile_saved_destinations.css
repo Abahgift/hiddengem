@@ -178,10 +178,6 @@ h1 {
   font-size: 0.85rem;
 }
 
-.each_card {
-  background-color: #f7f7f7;
-}
-
 .subtext {
   color: var(--text-grey);
   font-size: 0.925rem;
@@ -220,4 +216,13 @@ h1 {
 
 .form-label {
   font-size: 0.825rem;
+}
+
+.each_card {
+  background-color: var(--white);
+}
+
+.saved_image {
+  width: 80px;
+  height: auto;
 }

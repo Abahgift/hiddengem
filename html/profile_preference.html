@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css" />
     <!-- Style CSS -->
-    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="stylesheet" href="../css/profile_preference.css" />
 
     <!-- Custom Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -133,13 +133,13 @@
           </div>
           <!-- filter pills -->
           <div class="filter_pill_wrapper mb-5 px-5">
-            <span class="filter_pill_active fw-medium">Personal Info</span>
+            <a href="/html/profile.html"
+              ><span class="filter_pill">Personal Info</span></a
+            >
             <a href="/html/profile_saved_destinations.html"
               ><span class="filter_pill">Saved destinations</span></a
             >
-            <a href="/html/profile_preference.html"
-              ><span class="filter_pill">Preference</span></a
-            >
+            <span class="filter_pill_active fw-medium">Preference</span>
             <a href="/html/profile_recent_activity.html"
               ><span class="filter_pill">Recent Activity</span></a
             >
@@ -181,139 +181,132 @@
               </div>
             </div>
 
-            <!--Main div for Personal Info -->
+            <!--Main div for Travel Preferences and Notifications -->
             <div class="col-md-7 main">
-              <!-- Personal Info -->
+              <!--  Preferences  -->
               <div class="row d-flex justify-content-center">
-                <!-- personal info-->
+                <!-- Travel -->
                 <div class="row">
-                  <div class="col-md-12 side mb-4 p-4 rounded-3">
-                    <h5>Personal Info</h5>
+                  <div class="col-md-12 side mb-3 p-4 rounded-3">
+                    <h5 class="mb-3">Travel preferences</h5>
 
-                    <!-- First Name and Last Name -->
-                    <div class="names-wrapper my-3 col-md-12">
-                      <div class="mb-3 col-md-6">
-                        <label for="firstName" class="form-label"
-                          >First Name</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="firstName"
-                          placeholder="john"
-                          value="Gift"
-                        />
+                    <!-- Each Card -->
+                    <div
+                      class="each_card p-3 rounded-2 mb-2 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text_only">
+                        <h6>Preferred activities</h6>
+                        <p class="subtext m-0 p-0">
+                          Hiking, Waterfalls, Wildlife
+                        </p>
                       </div>
-                      <div class="mb-3 col-md-6">
-                        <label for="lastName" class="form-label"
-                          >Last Name</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="lastName"
-                          placeholder="doe"
-                          value="Abah"
-                        />
-                      </div>
+                      <p class="subtext my-auto">Edit</p>
                     </div>
 
-                    <!-- Email and Phone -->
-                    <div class="names-wrapper my-2 col-md-12">
-                      <div class="mb-3 col-md-6">
-                        <label for="firstName" class="form-label"
-                          >Email Address</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="firstName"
-                          placeholder="Enter email"
-                          value="giftabah@gmail.com"
-                        />
+                    <!-- Each Card -->
+                    <div
+                      class="each_card p-3 rounded-2 mb-2 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text_only">
+                        <h6>Preferred difficulty</h6>
+                        <p class="subtext m-0 p-0">Moderate to Hard</p>
                       </div>
-                      <div class="mb-3 col-md-6">
-                        <label for="lastName" class="form-label"
-                          >Phone number</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="lastName"
-                          placeholder="Enter phone"
-                          value="08170077248"
-                        />
-                      </div>
+                      <p class="subtext my-auto">Edit</p>
                     </div>
 
-                    <!-- State-->
-                    <div class="names-wrapper my-2 col-md-12">
-                      <div class="mb-3 col-12">
-                        <label for="firstName" class="form-label"
-                          >State of residence</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="firstName"
-                          placeholder="Enter state"
-                        />
+                    <!-- Each Card -->
+                    <div
+                      class="each_card p-3 rounded-2 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text_only">
+                        <h6>Preferred states</h6>
+                        <p class="subtext m-0 p-0">Taraba, Ondo, Osun</p>
                       </div>
+                      <p class="subtext my-auto">Edit</p>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Change Password -->
-              <div class="row d-flex justify-content-center">
-                <!-- Password -->
+                <!-- Notifications -->
                 <div class="row">
                   <div class="col-md-12 side mb-5 p-4 rounded-3">
-                    <h5>Change password</h5>
+                    <h5 class="mb-3">Notifications</h5>
 
-                    <!-- Current Password-->
-                    <div class="names-wrapper my-3 col-md-12">
-                      <div class="mb-3 col-12">
-                        <label for="firstName" class="form-label"
-                          >Current password</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="firstName"
-                          placeholder="Enter current password"
-                        />
+                    <!-- Each Card -->
+                    <div
+                      class="each_card p-3 rounded-2 mb-2 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text_only">
+                        <h6>Booking confirmations</h6>
+                        <p class="subtext m-0 p-0">
+                          Email me when a guide confirms my booking
+                        </p>
+                      </div>
+
+                      <div class="toggle_wrapper">
+                        <label class="toggle-switch">
+                          <input type="checkbox" checked />
+                          <span class="slider"></span>
+                        </label>
                       </div>
                     </div>
 
-                    <!-- New Password and Confirm Password -->
-                    <div class="names-wrapper mb-2 col-md-12">
-                      <div class="mb-3 col-md-6">
-                        <label for="firstName" class="form-label"
-                          >New Password</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="firstName"
-                          placeholder="Min. 8 characters"
-                        />
+                    <!-- Each Card -->
+                    <div
+                      class="each_card p-3 rounded-2 mb-2 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text_only">
+                        <h6>New destinations</h6>
+                        <p class="subtext m-0 p-0">
+                          Notify me when new places are listed
+                        </p>
                       </div>
-                      <div class="mb-3 col-md-6">
-                        <label for="lastName" class="form-label"
-                          >Last Name</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="lastName"
-                          placeholder="Repeat new password"
-                        />
+
+                      <div class="toggle_wrapper">
+                        <label class="toggle-switch">
+                          <input type="checkbox" />
+                          <span class="slider"></span>
+                        </label>
                       </div>
                     </div>
 
-                    <!-- Button -->
-                    <button class="btn btn-primary">Update password</button>
+                    <!-- Each Card -->
+                    <div
+                      class="each_card p-3 rounded-2 mb-2 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text_only">
+                        <h6>Review reminders</h6>
+                        <p class="subtext m-0 p-0">
+                          Remind me to review after a completed trip
+                        </p>
+                      </div>
+
+                      <div class="toggle_wrapper">
+                        <label class="toggle-switch">
+                          <input type="checkbox" checked />
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <!-- Each Card -->
+                    <div
+                      class="each_card p-3 rounded-2 mb-2 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text_only">
+                        <h6>Platform updates</h6>
+                        <p class="subtext m-0 p-0">
+                          News and feature announcements
+                        </p>
+                      </div>
+
+                      <div class="toggle_wrapper">
+                        <label class="toggle-switch">
+                          <input type="checkbox" />
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
